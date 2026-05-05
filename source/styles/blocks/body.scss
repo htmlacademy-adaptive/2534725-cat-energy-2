@@ -1,0 +1,19 @@
+@use "variables";
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: variables.$base-font;
+  font-size: 18px;
+  line-height: 21px;
+  color: #242424;
+  background-color: #f2f2f2;
+  min-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    counter-reset: section;
+  }
+}

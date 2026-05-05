@@ -1,0 +1,101 @@
+.filter {
+  padding: 10px 20px 16px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 23px;
+}
+
+.filter__control {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.filter__input:disabled {
+  opacity: 0.3;
+}
+
+.filter__label {
+  color: $back-color;
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 113%;
+  text-transform: uppercase;
+}
+
+.filter__item:active {
+  opacity: 0.3;
+}
+
+
+.filter__list {
+  @include list-reset;
+  display: grid;
+  gap: 13px;
+}
+
+.filter__input:checked + .filter__mark::after {
+  background-color: #68b738;
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.filter__mark {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .filter {
+    border: 1px solid #e7e7e7;
+    padding: 23px 27px 27px;
+    margin: 0 70px 65px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter__control {
+    gap: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter__mark {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter__input:checked + .filter__mark::after {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter {
+    align-content: center;
+    margin: 40px 110px 70px 80px;
+  }
+}

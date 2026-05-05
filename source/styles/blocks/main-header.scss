@@ -1,0 +1,48 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: grid;
+    grid-template-columns: 174px 1fr;
+    gap: 94px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 94px;
+    padding-left: 110px;
+    padding-top: 60px;
+    padding-right: 110px;
+    padding-bottom: 60px;
+  }
+
+  .main-header--index {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+}

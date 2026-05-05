@@ -1,0 +1,45 @@
+.programs {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.programs__list {
+  @include list-reset;
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__list {
+    gap: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__item {
+    display: flex;
+  }
+}
