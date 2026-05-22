@@ -1,8 +1,6 @@
 .extra-info {
   border-top: 1px solid #d9d9d9;
   padding-top: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .extra-info__card {
@@ -11,8 +9,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "subtitle subtitle"
-    "text price"
-    "button button";
+    "text     price"
+    "button   button";
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -24,6 +22,29 @@
   line-height: 100%;
   margin: 0;
   margin-bottom: 36px;
+  padding-top: 24px;
+  padding-bottom: 14px;
+  display: grid;
+  grid-template-columns: 0 auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.extra-info__content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.extra-info__title::before {
+  content: "";
+  height: 2px;
+  background-color: #68b738;
+}
+
+.extra-info__title::after {
+  content: "";
+  height: 2px;
+  background-color: #68b738;
 }
 
 .extra-info__subtitle {
@@ -95,10 +116,15 @@
 @media (min-width: $tablet-width) {
   .extra-info {
     border-top: none;
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 39px;
     padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-info__content {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -138,9 +164,10 @@
 @media (min-width: $tablet-width) {
   .extra-info__title {
     font-size: 36px;
-    line-height: 100%;
-    padding-left: 40px;
+    line-height: 36px;
     margin-bottom: 80px;
+    grid-template-columns: 30px auto 1fr;
+    gap: 40px;
   }
 }
 
@@ -170,13 +197,17 @@
 
 @media (min-width: $desktop-width) {
   .extra-info {
+    padding: 45px 0 87px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-info__content {
     display: grid;
     grid-template-columns: 1fr 245px;
-    grid-template-areas:
-      "title title"
-      "list aside";
-    gap: 0 80px;
-    padding: 45px 110px 87px;
+    padding-left: 110px;
+    padding-right: 110px;
+    gap: 80px;
   }
 }
 
@@ -214,6 +245,7 @@
   .extra-info__title {
     grid-area: title;
     padding-left: 0;
+    grid-template-columns: 70px auto 1fr;
   }
 }
 

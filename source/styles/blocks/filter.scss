@@ -11,7 +11,8 @@
   gap: 15px;
 }
 
-.filter__input:disabled {
+.filter__input:disabled .filter__mark,
+.filter__input:disabled .filter__label {
   opacity: 0.3;
 }
 
@@ -95,7 +96,6 @@
 
 @media (min-width: $desktop-width) {
   .filter {
-    align-content: center;
-    margin: 40px 110px 70px 80px;
+    margin: 0;
   }
 }

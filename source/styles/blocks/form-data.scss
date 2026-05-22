@@ -36,3 +36,20 @@
     line-height: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-data__section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    padding: 0 110px 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-data__wrapper {
+    gap: 80px;
+    padding: 0 110px 43px;
+  }
+}

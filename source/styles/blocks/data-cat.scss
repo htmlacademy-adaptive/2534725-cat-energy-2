@@ -4,11 +4,6 @@
   gap: 15px;
 }
 
-.data-cat__group:focus {
-  color: #444444;
-  border: 2px solid #444444;
-}
-
 .data-cat__group {
   width: 100%;
   display: flex;
@@ -151,9 +146,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .data-cat__group {
-    width: auto;
-    color: #e7e7e7;
+@media (min-width: $desktop-width) {
+  .data-cat {
+    padding: 0;
   }
 }
