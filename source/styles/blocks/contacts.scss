@@ -1,10 +1,7 @@
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 26px;
-  padding-top: 26px;
+  padding: 26px 20px;
 }
 
 .contacts--index {
@@ -50,10 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding: 60px 70px;
     gap: 300px;
   }
 }

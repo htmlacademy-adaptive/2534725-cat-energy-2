@@ -8,14 +8,9 @@
   content: "";
   position: absolute;
   background-size: cover;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 198px;
+  inset: 0 0 198px;
   z-index: -1;
-  /* stylelint-disable unit-no-unknown */
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/background-cat.jpg") 1x, url("../../images/background-cat@2x.jpg") 2x);
-  /* stylelint-enable unit-no-unknown */
   background-repeat: no-repeat;
 }
 
@@ -51,10 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .preview {
-    padding-bottom: 526px;
-    padding-top: 55px;
-    padding-left: 120px;
-    padding-right: 230px;
+    padding: 120px 230px 526px 120px;
   }
 }
 
@@ -104,25 +96,17 @@
 
 @media (min-width: $desktop-width) {
   .preview {
-    padding-top: 225px;
-    padding-right: 190px;
-    padding-bottom: 185px;
-    padding-left: 190px;
     margin-bottom: 82px;
+    padding: 225px 190px 185px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .preview::before {
     content: "";
-    top: 0;
-    right: 0;
-    left: 50%;
-    bottom: 0;
+    inset: 0 0 0 50%;
     z-index: -1;
-    /* stylelint-disable unit-no-unknown */
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/background-cat-desktop.jpg") 1x, url("../../images/background-cat-desktop@2x.jpg") 2x);
-    /* stylelint-enable unit-no-unknown */
     background-repeat: no-repeat;
   }
 }

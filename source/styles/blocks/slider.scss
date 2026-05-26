@@ -17,10 +17,7 @@
 
 .slider__after {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 50%;
+  inset: 0 50% 0 0;
 }
 
 .slider__image-before,
@@ -56,10 +53,7 @@
 .slider__button::after {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   transform: translateX(-45%);
   margin: auto;
   width: 40px;
@@ -87,10 +81,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    inset: 0;
     transform: translateX(-45%);
     margin: auto;
     width: 40px;
@@ -114,10 +105,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    inset: 0;
     transform: translateX(-45%);
     margin: auto;
     width: 40px;

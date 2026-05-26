@@ -7,8 +7,6 @@
 .data-cat__group {
   width: 100%;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
   align-items: center;
   white-space: nowrap;
   gap: 14px;
@@ -22,10 +20,7 @@
 
 .data-cat__date {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 12px;
-  padding-bottom: 13px;
+  padding: 12px 15px 13px;
   color: $back-color;
   font-family: $accent-font;
   font-size: 16px;
@@ -45,10 +40,7 @@
 
 .data-cat__date-two {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 12px;
-  padding-bottom: 13px;
+  padding: 12px 15px 13px;
   color: $back-color;
   font-family: $accent-font;
   font-size: 16px;
@@ -69,10 +61,7 @@
 
 .data-cat__date-three {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 12px;
-  padding-bottom: 13px;
+  padding: 12px 15px 13px;
   color: $back-color;
   font-family: $accent-font;
   font-size: 16px;

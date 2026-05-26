@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <meta name="viewport" content="width=device-width, initial-scarlet=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="images/favicons/16.svg" type="image/svg+xml"> <!-- 16×16 -->
-  <link rel="icon" href="images/favicons/32.svg" type="image/svg+xml"> <!-- 32×32 -->
-  <link rel="apple-touch-icon" href="images/favicons/152.svg"> <!-- 152×152 -->
+  <link rel="icon" href="images/favicons/16.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/152.svg">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -18,21 +17,23 @@
     <a class="main-header__logo logo" href="#">
       <span class="logo__pic-wrapper">
         <picture>
-          <source media="(min-width: 768px) and (max-width: 1439px)" srcset="images/logo-tablet.svg" width="60"
-            height="50">
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px) and (max-width: 1439px)" srcset="images/logo-tablet.svg"
+            type="image/svg+xml" width="60" height="50">
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70"
+            height="59">
           <img class="logo__pic" src="images/logo-mobile.svg" alt="лого" width="33" height="38">
         </picture>
       </span>
       <span class="logo__text-wrapper">
         <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
+          <source media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" type="image/svg+xml" width="118"
+            height="21">
           <img class="logo__text" src="images/logo-text-mobile.svg" alt="лого" width="101" height="18">
         </picture>
       </span>
     </a>
 
-    <nav class="main-nav"> <!--main-nav--opened-->
+    <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -64,11 +65,12 @@
           <section class="transfer__card">
             <picture>
               <source media="(min-width: 1440px)" srcset="images/desktop-chicken.png, images/desktop-chicken@2x.png 2x"
-                width="169" height="210">
+                type="image/png" width="169" height="210">
               <source media="(min-width: 768px)" srcset="images/tablet-chicken.png, images/tablet-chicken@2x.png 2x"
-                width="200" height="210">
+                type="image/png" width="200" height="210">
               <img class="transfer__pic" src="images/mobile-chicken.png" width="140" height="107"
-                srcset="images/mobile-chicken.png, images/mobile-chicken@2x.png 2x" alt="Энергетическая еда со вкусом курицы">
+                srcset="images/mobile-chicken.png, images/mobile-chicken@2x.png 2x"
+                alt="Энергетическая еда со вкусом курицы">
             </picture>
             <div class="transfer__info">
               <h2 class="transfer__subtitle">Cat Energy PRO 500 г</h2>
@@ -88,9 +90,11 @@
           <section class="transfer__card">
             <picture>
               <source media="(min-width: 1440px)"
-                srcset="images/desktop-big-chicken.png, images/desktop-big-chicken@2x.png 2x" width="169" height="210">
-              <source media="(min-width: 768px)" srcset="images/tablet-big-chicken.png, images/tablet-big-chicken@2x.png 2x"
-                width="200" height="210">
+                srcset="images/desktop-big-chicken.png, images/desktop-big-chicken@2x.png 2x" type="image/png"
+                width="169" height="210">
+              <source media="(min-width: 768px)"
+                srcset="images/tablet-big-chicken.png, images/tablet-big-chicken@2x.png 2x" type="image/png" width="200"
+                height="210">
               <img class="transfer__pic" src="images/mobile-big-chicken.png" width="140" height="107"
                 srcset="images/mobile-big-chicken.png, images/mobile-big-chicken@2x.png 2x"
                 alt="Энергетическая еда со вкусом курицы">
@@ -112,10 +116,10 @@
         <li class="transfer__item">
           <section class="transfer__card">
             <picture>
-              <source media="(min-width: 1440px)" srcset="images/desktop-fish.png, images/desktop-fish@2x.png 2x" width="169"
-                height="210">
-              <source media="(min-width: 768px)" srcset="images/tablet-fish.png, images/tablet-fish@2x.png 2x" width="200"
-                height="210">
+              <source media="(min-width: 1440px)" srcset="images/desktop-fish.png, images/desktop-fish@2x.png 2x"
+                type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/tablet-fish.png, images/tablet-fish@2x.png 2x"
+                type="image/png" width="200" height="210">
               <img class="transfer__pic" src="images/mobile-fish.png" width="140" height="107"
                 srcset="images/mobile-fish.png, images/mobile-fish@2x.png 2x" alt="Энергетическая еда со вкусом курицы">
             </picture>
@@ -136,10 +140,11 @@
         <li class="transfer__item">
           <section class="transfer__card">
             <picture>
-              <source media="(min-width: 1440px)" srcset="images/desktop-big-fish.png, images/desktop-big-fish@2x.png 2x"
-                width="169" height="210">
+              <source media="(min-width: 1440px)"
+                srcset="images/desktop-big-fish.png, images/desktop-big-fish@2x.png 2x" type="image/png" width="169"
+                height="210">
               <source media="(min-width: 768px)" srcset="images/tablet-big-fish.png, images/tablet-big-fish@2x.png 2x"
-                width="200" height="210">
+                type="image/png" width="200" height="210">
               <img class="transfer__pic" src="images/mobile-big-fish.png" width="140" height="107"
                 srcset="images/mobile-big-fish.png, images/mobile-big-fish@2x.png 2x"
                 alt="Энергетическая еда со вкусом рыбой">
@@ -161,10 +166,11 @@
         <li class="transfer__item">
           <section class="transfer__card">
             <picture>
-              <source media="(min-width: 1440px)" srcset="images/desktop-buckwheat.png, images/desktop-buckwheat@2x.png 2x"
-                width="169" height="210">
+              <source media="(min-width: 1440px)"
+                srcset="images/desktop-buckwheat.png, images/desktop-buckwheat@2x.png 2x" type="image/png" width="169"
+                height="210">
               <source media="(min-width: 768px)" srcset="images/tablet-buckwheat.png, images/tablet-buckwheat@2x.png 2x"
-                width="200" height="210">
+                type="image/png" width="200" height="210">
               <img class="transfer__pic" src="images/mobile-buckwheat.png" width="140" height="107"
                 srcset="images/mobile-buckwheat.png, images/mobile-buckwheat@2x.png 2x"
                 alt="Энергетическая еда со вкусом гречки">
@@ -187,9 +193,11 @@
           <section class="transfer__card">
             <picture>
               <source media="(min-width: 1440px)"
-                srcset="images/desktop-big-buckwheat.png, images/desktop-big-buckwheat@2x.png 2x" width="169" height="210">
+                srcset="images/desktop-big-buckwheat.png, images/desktop-big-buckwheat@2x.png 2x" type="image/png"
+                width="169" height="210">
               <source media="(min-width: 768px)"
-                srcset="images/tablet-big-buckwheat.png, images/tablet-big-buckwheat@2x.png 2x" width="200" height="210">
+                srcset="images/tablet-big-buckwheat.png, images/tablet-big-buckwheat@2x.png 2x" type="image/png"
+                width="200" height="210">
               <img class="transfer__pic" src="images/mobile-big-buckwheat.png" width="140" height="107"
                 srcset="images/mobile-big-buckwheat.png, images/mobile-big-buckwheat@2x.png 2x"
                 alt="Энергетическая еда со вкусом гречки">
@@ -211,10 +219,10 @@
         <li class="transfer__item">
           <section class="transfer__card">
             <picture class="transfer__pic">
-              <source media="(min-width: 1440px)" srcset="images/desktop-rice.png, images/desktop-rice@2x.png 2x" width="169"
-                height="210">
-              <source media="(min-width: 768px)" srcset="images/tablet-rice.png, images/tablet-rice@2x.png 2x" width="200"
-                height="210">
+              <source media="(min-width: 1440px)" srcset="images/desktop-rice.png, images/desktop-rice@2x.png 2x"
+                type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/tablet-rice.png, images/tablet-rice@2x.png 2x"
+                type="image/png" width="200" height="210">
               <img class="transfer__pic" src="images/mobile-rice.png" width="140" height="107"
                 srcset="images/mobile-rice.png, images/mobile-rice@2x.png 2x" alt="Энергетическая еда со вкусом риса">
             </picture>
@@ -236,7 +244,7 @@
           <section class="transfer__card transfer__card--more">
             <h3 class="transfer__subtitle">Показать еще 100500 товаров</h3>
             <p class="transfer__text">На самом деле вкусов гораздо больше!</p>
-            <button class="transfer__button-all">показать все</button>
+            <button class="transfer__button-all" type="button">показать все</button>
           </section>
         </li>
       </ul>
@@ -246,74 +254,76 @@
     <section class="extra-info">
       <h2 class="extra-info__title">Дополнительные товары</h2>
       <div class="extra-info__content">
-      <ul class="extra-info__list">
-        <li class="extra-info__item">
-          <section class="extra-info__card">
-            <h4 class="extra-info__subtitle">Сахарозаменитель</h4>
-            <p class="extra-info__text">1 упаковка (100 г)</p>
-            <p class="extra-info__text-price">200 ₽</p>
-            <button class="extra-info__button" type="button">заказать</button>
-          </section>
-        </li>
-        <li class="extra-info__item">
-          <section class="extra-info__card">
-            <h4 class="extra-info__subtitle">питьевая вода</h4>
-            <p class="extra-info__text">5 литров</p>
-            <p class="extra-info__text-price">50 ₽</p>
-            <button class="extra-info__button" type="button">заказать</button>
-          </section>
-        </li>
-        <li class="extra-info__item">
-          <section class="extra-info__card">
-            <h4 class="extra-info__subtitle">молоко</h4>
-            <p class="extra-info__text">1 литр</p>
-            <p class="extra-info__text-price">100 ₽</p>
-            <button class="extra-info__button" type="button">заказать</button>
-          </section>
-        </li>
-        <li class="extra-info__item">
-          <section class="extra-info__card">
-            <h4 class="extra-info__subtitle">витамины</h4>
-            <p class="extra-info__text">1 упаковка (30 г)</p>
-            <p class="extra-info__text-price">300 ₽</p>
-            <button class="extra-info__button" type="button">заказать</button>
-          </section>
-        </li>
-      </ul>
+        <ul class="extra-info__list">
+          <li class="extra-info__item">
+            <section class="extra-info__card">
+              <h4 class="extra-info__subtitle">Сахарозаменитель</h4>
+              <p class="extra-info__text">1 упаковка (100 г)</p>
+              <p class="extra-info__text-price">200 ₽</p>
+              <button class="extra-info__button" type="button">заказать</button>
+            </section>
+          </li>
+          <li class="extra-info__item">
+            <section class="extra-info__card">
+              <h4 class="extra-info__subtitle">питьевая вода</h4>
+              <p class="extra-info__text">5 литров</p>
+              <p class="extra-info__text-price">50 ₽</p>
+              <button class="extra-info__button" type="button">заказать</button>
+            </section>
+          </li>
+          <li class="extra-info__item">
+            <section class="extra-info__card">
+              <h4 class="extra-info__subtitle">молоко</h4>
+              <p class="extra-info__text">1 литр</p>
+              <p class="extra-info__text-price">100 ₽</p>
+              <button class="extra-info__button" type="button">заказать</button>
+            </section>
+          </li>
+          <li class="extra-info__item">
+            <section class="extra-info__card">
+              <h4 class="extra-info__subtitle">витамины</h4>
+              <p class="extra-info__text">1 упаковка (30 г)</p>
+              <p class="extra-info__text-price">300 ₽</p>
+              <button class="extra-info__button" type="button">заказать</button>
+            </section>
+          </li>
+        </ul>
 
-      <aside class="gift">
-        <picture>
-          <source media="(min-width: 768px) and (max-width: 1439px)"
-            srcset="images/tablet-cat-backpack.jpg , images/tablet-cat-backpack@2x.jpg 2x">
-          <source media="(min-width: 1440px)"
-            srcset="images/images/desktop-cat-backpack.jpg, images/desktop-cat-backpack@2x.jpg 2x">
-          <img class="gift__pic" src="images/mobile-cat-backpack.jpg" width="280" height="270"
-            srcset="images/images/mobile-cat-backpack.jpg, images/mobile-cat-backpack@2x.jpg 2x" alt="кот в рюкзаке">
-        </picture>
-        <p class="gift__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
-      </aside>
-    </div>
+        <aside class="gift">
+          <picture>
+            <source media="(min-width: 768px) and (max-width: 1439px)"
+              srcset="images/tablet-cat-backpack.jpg , images/tablet-cat-backpack@2x.jpg 2x" type="image/jpeg">
+            <source media="(min-width: 1440px)"
+              srcset="images/images/desktop-cat-backpack.jpg, images/desktop-cat-backpack@2x.jpg 2x" type="image/jpeg">
+            <img class="gift__pic" src="images/mobile-cat-backpack.jpg" width="280" height="270"
+              srcset="images/images/mobile-cat-backpack.jpg, images/mobile-cat-backpack@2x.jpg 2x" alt="кот в рюкзаке">
+          </picture>
+          <p class="gift__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+        </aside>
+      </div>
     </section>
   </main>
 
   <footer class="main-footer">
-
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title contacts__title--cooperate">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-        <p class="contacts__address"> <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span> <span
-            class="contacts__city">Санкт-Петербург</span></p>
+        <p class="contacts__address">
+          <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="contacts__city">Санкт-Петербург</span>
+        </p>
       </div>
       <picture>
-        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="images/map-tablet.jpg">
-        <source media="(min-width: 1440px)" srcset="images/map-desktop.jpg">
+        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="images/map-tablet.jpg" type="image/jpeg">
+        <source media="(min-width: 1440px)" srcset="images/map-desktop.jpg" type="image/jpeg">
         <img class="contacts__map" src="images/map-mobile.jpg" width="320" height="362" alt="карта">
       </picture>
     </section>
 
     <div class="main-footer__social-wrap">
-      <a href="index.html" class="main-footer__link"><img class="main-footer__name" src="images/footer-logo.svg"
-          alt="серый логотип cat energy"></a>
+      <a class="main-footer__link" href="index.html">
+        <img class="main-footer__name" src="images/footer-logo.svg" alt="серый логотип cat energy" width="128" height="24">
+      </a>
       <ul class="main-footer__socials-list">
         <li class="main-footer__socials-contacts-item">
           <a class="main-footer__socials-contacts-link" aria-label="Вконтакте" href="https://vk.com/htmlacademy">
@@ -349,7 +359,7 @@
       </ul>
       <a class="main-footer__logo-link" href="#">
         <span class="main-footer__logo-link-text" href="#">HTML Academy</span>
-        <img class="main-footer__logo-link-img" src="images/html-academy.svg" alt="значок html academy">
+        <img class="main-footer__logo-link-img" src="images/html-academy.svg" alt="значок html academy" width="27" height="34">
       </a>
     </div>
   </footer>

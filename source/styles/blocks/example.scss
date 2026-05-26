@@ -1,8 +1,5 @@
 .example {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 23px;
-  padding-bottom: 40px;
+  padding: 23px 20px 40px;
   background-color: #eaeaea;
   border-top: 1px solid color #e6e6e6;
 }
@@ -41,7 +38,7 @@
   font-family: $accent-font;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
-  padding: 14px 5px 17px 5px;
+  padding: 14px 5px 17px;
   font-size: 24px;
   line-height: 100%;
 }
@@ -77,10 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 47px;
-    padding-bottom: 103px;
+    padding: 47px 30px 103px;
     border-top: 1px solid #eaeaea;
     background-image: linear-gradient(to top, #eaeaea 463px, $fancy-color 463px);
   }
@@ -165,10 +159,7 @@
     display: grid;
     grid-template-columns: 1fr 560px;
     gap: 100px;
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-top: 47px;
-    padding-bottom: 70px;
+    padding: 47px 110px 70px;
     border-top: none;
     background-image: linear-gradient(to bottom, $fancy-color 185px, #eaeaea 185px);
   }

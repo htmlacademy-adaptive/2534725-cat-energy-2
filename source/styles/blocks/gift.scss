@@ -9,10 +9,7 @@
     background-image: url("../../images/surprise.svg"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
     background-repeat: no-repeat;
     background-position: center top 60px, top left;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
   }
 }
 
@@ -51,10 +48,7 @@
 
 @media (min-width: $tablet-width) {
   .gift__text {
-    margin-left: auto;
-    margin-right: 100px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 100px 0 auto;
     padding: 72px 20px 70px;
     max-width: 165px;
     text-align: left;

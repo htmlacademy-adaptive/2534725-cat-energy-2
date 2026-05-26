@@ -4,7 +4,7 @@
 }
 
 .extra-info__card {
-  padding: 12px 0 18px 0;
+  padding: 12px 0 18px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -132,8 +132,8 @@
   .extra-info__card {
     grid-template-columns: 1fr 1fr 90px;
     grid-template-areas:
-      "subtitle text price"
-      "button button button";
+      "subtitle text   price"
+      "button   button button";
     align-items: center;
     padding: 26px 37px 28px;
     border-left: 1px solid #cdcdcd;
