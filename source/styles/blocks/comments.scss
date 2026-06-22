@@ -10,8 +10,6 @@
   line-height: 108%;
   margin-top: 0;
   margin-bottom: 37px;
-  padding-top: 24px;
-  padding-bottom: 14px;
   display: grid;
   grid-template-columns: 0 auto 1fr;
   gap: 20px;
@@ -100,5 +98,15 @@
   .comments__title {
     margin-bottom: 75px;
     grid-template-columns: 70px auto 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments__title::before {
+    margin-top: 9px;
+  }
+
+  .comments__title::after {
+    margin-top: 9px;
   }
 }

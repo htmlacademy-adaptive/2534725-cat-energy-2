@@ -11,10 +11,11 @@
   gap: 15px;
 }
 
-.filter__input:disabled .filter__mark,
-.filter__input:disabled .filter__label {
+.filter__input:disabled ~ .filter__mark,
+.filter__input:disabled ~ .filter__label {
   opacity: 0.3;
 }
+
 
 .filter__label {
   color: $back-color;

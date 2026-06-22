@@ -10,8 +10,6 @@
   line-height: 108%;
   margin: 0;
   margin-bottom: 34px;
-  padding-top: 24px;
-  padding-bottom: 14px;
   display: grid;
   grid-template-columns: 0 auto 1fr;
   gap: 20px;
@@ -45,7 +43,8 @@
   text-transform: uppercase;
 }
 
-.add-info__input:disabled {
+.add-info__input:disabled ~ .add-info__mark,
+.add-info__input:disabled ~ .add-info__label {
   opacity: 0.3;
 }
 
@@ -145,6 +144,8 @@
 @media (min-width: $desktop-width) {
   .add-info__title {
     grid-template-columns: 70px auto 1fr;
+    align-items: start;
+    margin: 0 0 55px;
   }
 }
 
@@ -166,5 +167,16 @@
   .add-info__content {
     padding-left: 110px;
     padding-right: 110px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .add-info__title::before {
+    margin-top: 21px;
+  }
+
+  .add-info__title::after {
+    margin-top: 21px;
   }
 }

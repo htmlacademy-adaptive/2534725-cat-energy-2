@@ -6,7 +6,7 @@
 .main-footer__socials-list {
   list-style: none;
   margin: 0;
-  padding: 20px 0;
+  padding: 20px 0 18px;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -33,12 +33,12 @@
 }
 
 .main-footer__name {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .main-footer__social-wrap {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 37px;
   padding-left: 20px;
   padding-right: 20px;
 }
