@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--index">
+  <header class="main-header">
     <a class="main-header__logo logo" href="#">
       <span class="logo__pic-wrapper">
         <picture>
@@ -35,11 +35,13 @@
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list site-list--index">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link site-list__link--current" href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
@@ -49,7 +51,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+            <a class="site-list__link site-list__link--current" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -57,114 +59,134 @@
       </div>
     </nav>
   </header>
-  <main class="main-container">
 
-    <section class="preview">
-      <h1 class="preview__main-title">Функциональное питание для котов</h1>
-      <p class="preview__main-subtitle">Занялся собой? Займись котом!</p>
-      <picture>
-        <source media="(min-width: 768px) and (max-width: 1439px)" type="image/png"
-          srcset="images/tablet-can-of-feed.png , images/tablet-can-of-feed@2x.png 2x">
-        <source media="(min-width: 1440px)"
-          srcset="images/images/desktop-can-of-feed.png, images/desktop-can-of-feed@2x.png 2x" type="image/png">
-        <img class="preview__img" src="images/mobile-can-of-feed.png" width="280" height="270"
-          srcset="images/images/mobile-can-of-feed.png, images/mobile-can-of-feed@2x.png 2x"
-          alt="банка с кормом со вкусом курицы">
-      </picture>
-      <button class="button-all" type="button">подобрать программу</button>
-    </section>
+  <main class="second-main-container">
+    <section class="questionnaire">
+      <h1 class="questionnaire__title">Подбор программы</h1>
+      <p class="questionnaire__subtitle">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
 
-    <section class="programs">
-      <h2 class="visually-hidden">Программа Питания</h2>
-      <ul class="programs__list">
-        <li class="programs__item">
-          <section class="program program--slim">
-            <h3 class="program__second-title">Похудение</h3>
-            <p class="program__action">
-              Ваш кот весит больше собаки и почти утратил способность лазить
-              по деревьям? Пора нa диету! Cat Energy Slim поможет вашему
-              питомцу сбросить лишний вес.
+      <form class="form-data" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="form-data__section-wrapper">
+          <section class="data-cat">
+            <h2 class="visually-hidden">Личные Данные</h2>
+            <p class="data-cat__group">
+              <label class="data-cat__field-label" for="date-cat-name">ИМЯ:*</label>
+              <input class="data-cat__date" type="text" id="date-cat-name" name="date-checkin" placeholder="ИМЯ:"
+                value="барсик" required>
             </p>
-            <a class="program__link" href="#">каталог slim</a>
-          </section>
-        </li>
-        <li class="programs__item">
-          <section class="program program--fat">
-            <h3 class="program__second-title">Набор массы</h3>
-            <p class="program__action">
-              Заработать авторитет среди дворовых котов и даже собак? Серия
-              Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            <p class="data-cat__group">
+              <label class="data-cat__field-label" for="date-weight-cat">Вес (кг):*</label>
+              <input class="data-cat__date-two" type="text" id="date-weight-cat" name="date-checkin"
+                placeholder="Вес (кг):" value="7" required>
             </p>
-            <a class="program__link" href="#">каталог pro</a>
+            <p class="data-cat__group">
+              <label class="data-cat__field-label" for="date-age-cat">Возраст (лет):</label>
+              <input class="data-cat__date-three" type="text" id="date-age-cat" name="date-checkin"
+                placeholder="Возраст (лет):" value="7" required>
+            </p>
           </section>
-        </li>
-      </ul>
-    </section>
 
-    <section class="explanation">
-      <h3 class="explanation__title">Как это работает</h3>
-      <ul class="explanation__list">
-        <li class="explanation__item explanation__item--leaflet">Функциональное питание содержит только полезные
-          питательные вещества.</li>
-        <li class="explanation__item explanation__item--chemicals">Выпускается в виде порошка, который
-          нужно лишь залить кипятком и готово.</li>
-        <li class="explanation__item explanation__item--devices">Замените один-два приема обычной еды
-          на наше
-          функциональное питание.</li>
-        <li class="explanation__item explanation__item--time">Уже через месяц наслаждайтесьизменениями
-          к лучшему вашего питомца!</li>
-      </ul>
-    </section>
 
-    <section class="example">
-      <div class="example__wrapper">
-        <h3 class="example__title">Живой пример</h3>
-        <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов
-          в день.
-        </p>
-        <div class="example__wrapper-cost">
-          <ul class="example__list">
-            <li class="example__item">
-              <p class="example__results">5 КГ</p>
-              <p class="example__name">снижение веса</p>
-            </li>
-            <li class="example__item">
-              <p class="example__results">60 ДНЕЙ</p>
-              <p class="example__name">затрачено времени</p>
-            </li>
-          </ul>
-          <p class="example__cost">
-            <span class="example__cost-text">Затраты на питание:</span>
-            <span class="example__cost-price">15 000 РУБ.</span>
-          </p>
-        </div>
-      </div>
-      <div class="slider">
-        <div class="slider__before">
-          <picture>
-            <source media="(min-width: 768px)" srcset="images/cat-thin-desktop.png, images/cat-thin-desktop@2x.png 2x"
-              type="image/png">
-            <img class="slider__image-before" src="images/cat-thin-mobile.png" width="280" height="256"
-              srcset="images/cat-thin-mobile.png, images/cat-thin-mobile@2x.png 2x" alt="лого">
-          </picture>
-        </div>
-        <div class="slider__after">
-          <picture>
-            <source media="(min-width: 768px)" srcset="images/cat-fat-desktop.png, images/cat-fat-desktop@2x.png 2x"
-              type="image/png">
-            <img class="slider__image-after" src="images/cat-fat-mobile.png" width="280" height="256"
-              srcset="images/cat-fat-mobile.png, images/cat-fat-mobile@2x.png 2x" alt="лого">
-          </picture>
-        </div>
-        <button class="slider__button" type="button">
-          <span class="visually-hidden">кнопка-слайдера</span>
-        </button>
-      </div>
-    </section>
+          <section class="filter">
+            <h3 class="visually-hidden">Контроль Веса</h3>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="filter__control">
+                  <input class="visually-hidden filter__input" type="radio" name="weight" value="pool" checked>
+                  <span class="filter__mark"></span>
+                  <span class="filter__label">Похудение</span>
+                </label>
+              </li>
 
+              <li class="filter__item">
+                <label class="filter__control">
+                  <input class="visually-hidden filter__input" type="radio" name="weight" value="parking" disabled>
+                  <span class="filter__mark"></span>
+                  <span class="filter__label">Набор массы</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__control">
+                  <input class="visually-hidden filter__input" type="radio" name="weight" value="WI-FI">
+                  <span class="filter__mark"></span>
+                  <span class="filter__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+
+        <section class="contacts-owner">
+          <h3 class="contacts-owner__title">Контактные данные
+            (владельца кота)</h3>
+          <div class="contacts-owner__wrapper">
+            <p class="contacts-owner__field-group">
+              <label class="contacts-owner__field-label" for="date-info-email">E-mail:*</label>
+              <input class="contacts-owner__email" type="text" id="date-info-email" name="date-checkin"
+                placeholder="E-mail:" value="kuklachev@gmail.com">
+            </p>
+            <p class="contacts-owner__field-group">
+              <label class="contacts-owner__field-label" for="date-info-tell">Телефон:*</label>
+              <input class="contacts-owner__tel" type="text" id="date-info-tell" name="date-checkin"
+                placeholder="Телефон:" value="8 (960) 900-60-90">
+            </p>
+          </div>
+        </section>
+
+
+        <section class="comments">
+          <h3 class="comments__title">Комментарий</h3>
+          <div class="comments__content">
+            <textarea class="comments__text" name="comments__subtitle"
+              id="comments-big-text">Расскажите обо всех повадках кота</textarea>
+          </div>
+        </section>
+
+
+        <section class="add-info">
+          <h3 class="add-info__title">Дополнительно</h3>
+          <div class="add-info__content">
+            <ul class="add-info__list">
+              <li class="add-info__item">
+                <label class="add-info__control">
+                  <input class="visually-hidden add-info__input" type="checkbox" name="ingredients" disabled>
+                  <span class="add-info__mark"></span>
+                  <span class="add-info__label">сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="add-info__item">
+                <label class="add-info__control">
+                  <input class="visually-hidden add-info__input" type="checkbox" name="ingredients" checked>
+                  <span class="add-info__mark"></span>
+                  <span class="add-info__label">питьевая вода</span>
+                </label>
+              </li>
+              <li class="add-info__item">
+                <label class="add-info__control">
+                  <input class="visually-hidden add-info__input" type="checkbox" name="ingredients">
+                  <span class="add-info__mark"></span>
+                  <span class="add-info__label">молоко</span>
+                </label>
+              </li>
+              <li class="add-info__item">
+                <label class="add-info__control">
+                  <input class="visually-hidden add-info__input" type="checkbox" name="ingredients">
+                  <span class="add-info__mark"></span>
+                  <span class="add-info__label">витамины</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="form-data__wrapper">
+          <button class="button-green" type="submit">отправить заявку</button>
+          <p class="form-data__text">* — Обязательные поля</p>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer class="main-footer">

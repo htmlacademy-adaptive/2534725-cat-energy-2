@@ -1,0 +1,45 @@
+.button-all {
+  width: 280px;
+  padding: 10px 20px;
+  font-family: $accent-font;
+  color: $fancy-color;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  border: none;
+  background-color: #6bd738;
+  align-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.button-all:hover {
+  background-color: #5eaa2f;
+}
+
+.button-all:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .button-all {
+    margin: 0;
+    padding: 14px 26px;
+    width: 244px;
+    font-size: 20px;
+    line-height: 130%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-all {
+    width: 245px;
+    padding: 14px 20px;
+    font-size: 20px;
+    line-height: 130%;
+    text-transform: uppercase;
+    border: none;
+  }
+}

@@ -1,0 +1,82 @@
+.questionnaire {
+  border-top: 1px solid #d9d9d9;
+  background-color: $fancy-color;
+  padding: 27px 0 20px;
+}
+
+.questionnaire__title {
+  color: $side-color;
+  font-family: $accent-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 37px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.questionnaire__subtitle {
+  color: $side-color;
+  font-family: $accent-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
+  max-width: 250px;
+  margin: 0;
+  margin-bottom: 39px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .questionnaire {
+    border: none;
+    padding: 55px 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .questionnaire__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .questionnaire__subtitle {
+    max-width: 323px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .questionnaire {
+    padding: 18px 0 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .questionnaire__title {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .questionnaire__subtitle {
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 65px;
+  }
+}

@@ -1,0 +1,260 @@
+.extra-info {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 25px;
+}
+
+.extra-info__card {
+  padding: 12px 0 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "subtitle subtitle"
+    "text     price"
+    "button   button";
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.extra-info__title {
+  color: $side-color;
+  font-family: $accent-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 18px;
+  padding-top: 3px;
+  padding-bottom: 14px;
+  display: grid;
+  grid-template-columns: 0 auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.extra-info__content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.extra-info__title::before {
+  content: "";
+  height: 2px;
+  background-color: #68b738;
+}
+
+.extra-info__title::after {
+  content: "";
+  height: 2px;
+  background-color: #68b738;
+}
+
+.extra-info__subtitle {
+  color: #222222;
+  font-family: $accent-font;
+  grid-area: subtitle;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.extra-info__text {
+  color: $back-color;
+  font-family: $base-font;
+  grid-area: text;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: left;
+  margin: 0;
+}
+
+.extra-info__text-price {
+  color: $back-color;
+  font-family: $base-font;
+  grid-area: price;
+  text-align: right;
+  font-size: 14px;
+  line-height: 100%;
+  margin: 0;
+}
+
+.extra-info__list {
+  @include list-reset;
+}
+
+.extra-info__item:first-child {
+  .extra-info__card {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.extra-info__button {
+  grid-area: button;
+  margin-top: 16px;
+  padding: 10px 20px;
+  font-family: $accent-font;
+  color: $fancy-color;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  border: none;
+  background-color: #6bd738;
+  width: 100%;
+}
+
+.extra-info__button:hover {
+  background-color: #5eaa2f;
+}
+
+.extra-info__button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .extra-info {
+    border-top: none;
+    padding-top: 39px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-info__content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-info__card {
+    grid-template-columns: 1fr 1fr 90px;
+    grid-template-areas:
+      "subtitle text   price"
+      "button   button button";
+    align-items: center;
+    padding: 26px 37px 28px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-info__text-price {
+    grid-area: price;
+    text-align: right;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-info__text {
+    grid-area: text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: right;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-info__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 63px;
+    grid-template-columns: 30px auto 1fr;
+    gap: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-info__subtitle {
+    grid-area: subtitle;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-info__button {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-info__button {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-info {
+    padding: 45px 0 87px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-info__content {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    padding-left: 110px;
+    padding-right: 110px;
+    gap: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-info__card {
+    grid-template-columns: 1fr 145px 100px 245px;
+    grid-template-areas: "subtitle text price button";
+    gap: 40px;
+    border-left: none;
+    border-right: none;
+    padding: 15px 0 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-info__text-price {
+    grid-area: price;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-info__text {
+    grid-area: text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-info__title {
+    grid-area: title;
+    padding-left: 0;
+    grid-template-columns: 70px auto 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-info__subtitle {
+    grid-area: subtitle;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,139 @@
+.slider {
+  position: relative;
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+}
+
+.slider__before,
+.slider__after {
+  background-color: #eaeaea;
+  overflow: hidden;
+}
+
+.slider__before {
+  position: relative;
+}
+
+.slider__after {
+  position: absolute;
+  inset: 0 50% 0 0;
+}
+
+.slider__image-before,
+.slider__image-after {
+  display: block;
+}
+
+.slider__image-before {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__image-after {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__button {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  width: 4px;
+  border-radius: 4px;
+  padding: 0;
+  border: none;
+  background-color: #666666;
+  cursor: ew-resize;
+}
+
+.slider__button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-45%);
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $fancy-color;
+  background-image: url("../../images/thumb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #666666;
+  box-sizing: border-box;
+}
+
+.slider__button:hover {
+  background-color: #68b738;
+
+  &::after {
+    mask-image: url("../../images/thumb.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background: #68b738;
+    border: 2px solid #68b738;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-45%);
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
+.slider__button:active {
+  background-color: #5eaa2f;
+
+  &::after {
+    mask-image: url("../../images/thumb.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background: #5eaa2f;
+    border: 2px solid #5eaa2f;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-45%);
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__before,
+  .slider__after {
+    background-color: unset;
+    background-image: linear-gradient(to top, #eaeaea 360px, $fancy-color 360px);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__before,
+  .slider__after {
+    background-color: unset;
+    background-image: linear-gradient(to bottom, $fancy-color 138px, #eaeaea 138px);
+  }
+}

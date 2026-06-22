@@ -1,7 +1,32 @@
-/* GLOBAL */
-@import "./common/variables.scss";
-@import "./common/global.scss";
-@import "./common/fonts.scss";
-
-/* BLOCKS */
-@import "./blocks/header.scss";
+@import "global.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "utils.scss";
+@import "variables.scss";
+@import "blocks/page.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/button-green.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/preview.scss";
+@import "blocks/filter.scss";
+@import "blocks/button-all.scss";
+@import "blocks/programs.scss";
+@import "blocks/explanation.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/questionnaire.scss";
+@import "blocks/headline.scss";
+@import "blocks/quantity.scss";
+@import "blocks/extra-info.scss";
+@import "blocks/form-data.scss";
+@import "blocks/slider.scss";
+@import "blocks/contacts-owner.scss";
+@import "blocks/comments.scss";
+@import "blocks/add-info.scss";
+@import "blocks/program.scss";
+@import "blocks/transfer.scss";
+@import "blocks/site-list.scss";
+@import "blocks/gift.scss";
+@import "blocks/data-cat.scss";
+@import "blocks/logo.scss";

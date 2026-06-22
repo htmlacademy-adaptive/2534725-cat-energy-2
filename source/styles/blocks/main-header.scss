@@ -1,0 +1,42 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 20px 10px;
+  position: relative;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: grid;
+    grid-template-columns: 174px 1fr;
+    gap: 94px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 94px;
+    padding: 60px 110px;
+  }
+
+  .main-header--index {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+}

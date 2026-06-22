@@ -1,0 +1,20 @@
+.button-green {
+  width: 100%;
+  padding: 10px 20px;
+  font-family: $accent-font;
+  color: $fancy-color;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  border: none;
+  background-color: #6bd738;
+}
+
+
+@media (min-width: $tablet-width) {
+  .button-green {
+    padding: 14px 20px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

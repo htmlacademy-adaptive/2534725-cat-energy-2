@@ -1,0 +1,142 @@
+.data-cat {
+  padding: 0 20px 22px;
+  display: grid;
+  gap: 15px;
+}
+
+.data-cat__group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 14px;
+  color: $back-color;
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 113%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.data-cat__date {
+  width: 100%;
+  padding: 12px 15px 13px;
+  color: $back-color;
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 113%;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.data-cat__date:focus {
+  border: 1px solid #444444;
+}
+
+.data-cat__date:invalid {
+  border: 1px solid #ff8282;
+}
+
+.data-cat__date-two {
+  width: 100%;
+  padding: 12px 15px 13px;
+  color: $back-color;
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 113%;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.data-cat__date-two:focus {
+  border: 1px solid #444444;
+}
+
+.data-cat__date-two:invalid {
+  border: 1px solid #ff8282;
+}
+
+
+.data-cat__date-three {
+  width: 100%;
+  padding: 12px 15px 13px;
+  color: $back-color;
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 113%;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.data-cat__date-three:focus {
+  border: 1px solid #444444;
+}
+
+.data-cat__date-three:invalid {
+  border: 1px solid #ff8282;
+}
+
+
+.data-cat__field-label {
+  color: $back-color;
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 113%;
+  text-transform: uppercase;
+}
+
+.filter-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .data-cat {
+    gap: 18px;
+    padding: 0 70px 71px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .data-cat__field-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .data-cat__date {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 12px 15px 10px 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .data-cat__date-two {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 12px 15px 10px 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .data-cat__date-three {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 12px 15px 10px 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data-cat {
+    padding: 0;
+  }
+}
